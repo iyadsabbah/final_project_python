@@ -31,7 +31,7 @@ def remove_student(students_list):
             del students_list[i]
             print('student deleted')
             break
-        elif i == len(students_list) and not students_list[i].student_number == number:
+        elif i == len(students_list) - 1 and not students_list[i].student_number == number:
             print('student does not exist')
 
 
