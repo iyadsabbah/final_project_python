@@ -33,6 +33,11 @@ while True:
         defs.add_course_to_student(students_list, course_list)
 
     elif selected == '7':
+        print('''
+        -------------------------------------
+        ------------- Goodbye ---------------
+        -------------------------------------
+        ''')
         exit()
     else:
         print('Please enter a valid number from the list')
