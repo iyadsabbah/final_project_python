@@ -3,7 +3,9 @@ from classes import Student, Course
 
 def add_new_student(students_list):
     name = input('enter student name')
-    class_number = input('enter student class')
+    class_number = input('enter student class (A-B-C): ')
+    while not class_number == 'A' and not class_number == 'B' and not class_number == 'C':
+        class_number = input('Please enter a valid class (A-B-C): ')
     new_student = Student(name, class_number, [])
     students_list.append(new_student)
     print(new_student.get_student_details())
